@@ -1,0 +1,324 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+
+}
+::-webkit-scrollbar {
+    width: 10px; /* Ширина полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0068A3; /* Цвет ползунка (активная часть) */
+    border-radius: 6px; /* Закругленные углы ползунка */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d3d3d3; /* Цвет фона трека (неактивная часть) */
+    border-radius: 6px; /* Закругленные углы ползунка */
+}
+.navigation {
+    padding: 10px;
+    position: fixed;
+    bottom: 1;
+    width: 100%;
+    height: 30px;
+    z-index: 200;
+    background-color: transparent; /* Начальный цвет */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета за 0.3 секунды */
+    padding: 20px;
+    border-radius: 20px;
+}
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.614);
+
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    margin-right: 10%;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Размещаем элементы вправо */
+}
+a {
+    text-decoration: none;
+    margin-left: 24px;
+    color: #000;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: opacity 0.3s ease;
+}
+a:hover {
+    opacity: 0.7;
+}
+label {
+    color: #000;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    }
+input {
+    width: 350px;
+    height: 45px;
+    border-radius: 15px;
+    background: #F6F6F6;
+    outline: none;
+    border: 0;
+    padding: 5px;
+
+    color: #747474;
+    font-family: "Kumbh Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+button {
+    width: 170px;
+    height: 45px;
+    border-radius: 15px;
+    background: #4A99C6;
+    border: 0;
+    color: #FFF;
+    font-family: "Kumbh Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 2%;
+}
+
+span {
+    color: #000;
+font-family: "Kumbh Sans";
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.add_rem {
+    color: #0068A3;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.add_ats {
+    color: #0068A3;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.rev_virsr {
+    margin-top: 10%;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+
+
+.wrapper {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтальной оси */
+    align-items: center; /* Выравнивание по вертикальной оси */
+}
+.title_block {
+
+    width: 99%;
+    height: 900px;
+    padding: 5%;
+}
+.routes_block {
+    background-color: #F6F6F6;
+    width: 90%;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+
+    margin-bottom: 5%;
+    padding: 15px;
+
+
+}
+.route_item {
+    width: 97%;
+    height: 50px;
+    background-color: rgba(217, 217, 217, 0.30);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;  
+}
+.time_block {
+    width: 4%;
+    height: 100%;
+    padding-top: 15px;
+}
+.arrow_block {
+    width: 60px;
+    height: 100%;
+    padding-top: 10px;
+}
+.img_block {
+    width: 35px;
+    height: 100%;
+    margin-left: 60px;
+    padding-top: 7px;
+}
+.route_name {
+    width: 250px;
+    padding-top: 7px;
+    height: 100%;
+}
+.route_name span{
+
+    color: #000;
+    font-family: "Kumbh Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.routes_action_block {
+    width: 90%;
+    height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+
+
+footer {
+    background: #353535;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+.contact_block {
+
+    width: 620px;
+    height: 200px;
+}
+.social_media_block {
+
+    width: 620px;
+    height: 200px;
+}
+.footer_title {
+    height: 20px;
+    width: 120px;
+
+}
+.footer_title h3 {
+    color: white;
+
+}
+.footer_cntnt {
+
+    margin-top: 10px;
+    height: 150px;
+    width: 250px;
+}
+.footer_cntnt p {
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    
+    color: #FFF;
+    font-family: Kumbh Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer_cntnt img {
+    float: left;
+    margin-left: 5px;   
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: black;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }

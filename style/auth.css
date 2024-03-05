@@ -1,0 +1,259 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #D9D9D9;
+    margin: 0;
+    overflow: hidden;
+}
+
+.toast{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #7429D4;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.toast.active{
+    transform: translateX(0%);
+}
+.toast .toast-content{
+    display: flex;
+    align-items: center;
+}
+.toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #7429D4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.message .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #666666;
+}
+.message .text.text-1{
+    font-weight: 600;
+    color: #333;
+}
+.toast .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.toast .close:hover{
+    opacity: 1;
+}
+.toast .progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4f4f4f;
+}
+.progress.active:before{
+    animation: progress 5s linear forwards;
+}
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+
+.toast2{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #7429D4;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+
+}
+.toast2.active{
+    transform: translateX(0%);
+    
+}
+.toast2 .toast-content2{
+    display: flex;
+    align-items: center;
+}
+
+.toast-content2 .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #7429D4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.toast-content2 .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.toast2 .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.toast2 .close:hover{
+    opacity: 1;
+}
+.toast2 .progress2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+.toast2 .progress2:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4f4f4f;
+}
+.progress2.active:before{
+    animation: progress 5s linear forwards;
+}@keyframes progress2 {
+    100%{
+        right: 100%;
+ }
+}
+
+
+
+button{
+    padding: 12px 20px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #4070f4;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #0e4bf1;
+}
+
+
+
+.auth_block {
+    width: 370px;
+height: 287px;
+flex-shrink: 0;
+border-radius: 25px;
+background: #FFF;
+margin-left: auto;
+margin-right: auto;
+margin-top: 15%;
+margin-bottom: 100px;
+padding: 30px;
+}
+.auth_title_block {
+
+    width: 80%;
+    height: 10%;
+    margin-left: 10px;
+
+    padding: 10px;
+    
+}
+.auth_ctnt {
+    padding: 20px;
+}
+input {
+    width: 311px;
+height: 42px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #ECECEC;
+color: rgba(0, 0, 0, 0.50);
+font-family: Kumbh Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border: 0;
+margin-bottom: 15px;
+padding-left: 15px;
+transition: 0.1s ease-in;
+}
+input:focus {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    outline: none;
+}
+button {
+    width: 98px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #7429D4;
+
+    color: #FFF;
+font-family: Kumbh Sans;
+font-size: 12px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border: 0;
+transition: 0.2s ease-in-out;
+}
+button:hover{
+   
+    background: rgb(97, 26, 190);
+}
+footer {
+    width: 100%;
+    background: #353535;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    bottom: 0;
+    position: fixed;
+    color: white;
+}

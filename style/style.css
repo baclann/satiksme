@@ -1,0 +1,672 @@
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+
+}
+  
+::-webkit-scrollbar {
+    width: 10px; /* Ширина полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #0068A3; /* Цвет ползунка (активная часть) */
+    border-radius: 6px; /* Закругленные углы ползунка */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d3d3d3; /* Цвет фона трека (неактивная часть) */
+    border-radius: 6px; /* Закругленные углы ползунка */
+}
+.btn_url {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: left; /* Для сохранения выравнивания текста внутри кнопки */
+    text-decoration: none;
+    cursor: pointer
+}
+.navigation {
+    padding: 10px;
+    position: fixed;
+    bottom: 1;
+    width: 100%;
+    height: 30px;
+    z-index: 200;
+    background-color: transparent; /* Начальный цвет */
+    transition: background-color 0.3s ease; /* Плавное изменение цвета за 0.3 секунды */
+    padding: 20px;
+    border-radius: 20px;
+}
+.scrolled {
+    background-color: rgba(255, 255, 255, 0.614);
+
+}
+.menu {
+    list-style: none;
+    margin: 0;
+    margin-right: 10%;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Размещаем элементы вправо */
+}
+a {
+    text-decoration: none;
+    margin-left: 24px;
+    color: #000;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: opacity 0.3s ease;
+}
+a:hover {
+    opacity: 0.7;
+}
+label {
+    color: #000;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.add_rem {
+    color: #0068A3;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    
+}
+.add_ats {
+    color: #0068A3;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+.rev_virsr {
+    margin-top: 10%;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтальной оси */
+    align-items: center; /* Выравнивание по вертикальной оси */
+}
+
+.txt {
+
+    width: 500px;
+    height: 650px;
+    margin-top: 200px;
+    
+}
+.main_txt {
+    color: black;
+    font-family: Kumbh Sans;
+font-size: 64px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-bottom: 0;
+}
+.virsr_Style {
+    color: #000;
+font-family: Kumbh Sans;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+
+}
+.sub_main_txt {
+    color: #000;
+font-family: Kumbh Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 0;
+margin-bottom: 53px;
+}
+.rows {
+
+    width: 430px;
+    height: 45px;
+    margin-bottom: 5px;
+}
+.row_img {
+    float: left;
+    margin-right: 15px;
+}
+.row_txt {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: black;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.mainimg {
+    width: 690px;
+    height: 500px;
+    margin-top: 200px;
+    margin-left: 72px;
+}
+.vector1 {
+    float: right;
+}
+.btns {
+
+    width: 400px;
+    height: 200px;
+
+}
+.add_rem_btn {
+    width: 180px;
+    height: 61px;
+    flex-shrink: 0;
+    background-color: #0068A3;;
+    border-radius: 20px;
+    margin-top: 130px;
+    border: none;
+    color: #FFF;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+transition: background-color 0.3s ease; 
+}
+.add_saz_btn {
+    width: 180px;
+    height: 61px;
+    flex-shrink: 0;
+    background-color: #4A99C6;;
+    border-radius: 20px;
+    margin-top: 130px;
+    margin-left: 20px;
+    border: none;
+    color: #FFF;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+transition: background-color 0.3s ease; 
+}
+.add_rem_btn:hover {
+    background-color: #005180;;
+}
+.add_saz_btn:hover {
+    background-color: #3d88b4;
+}
+
+.rev_block {
+    margin-top: 10%;
+    background-color: black;
+}
+.uzn_darb {
+    height: 600px;
+    width: 1290px;
+    margin-bottom: 150px;
+    margin-top: 340px;
+}
+.add_rent_block {
+    margin-top: 10%;
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+}
+.add_block {
+    width: 383px;
+    height: 447px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+    margin-left: 20%;
+    border: 3px #F7F7F7 solid;
+
+    transition: 0.1s ease-in;
+}
+.rent_block {
+    width: 383px;
+    height: 447px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: #FFF;
+    border: 3px #F7F7F7 solid;
+    margin-left: 15px;
+
+
+    transition: 0.1s ease-in;
+}
+.add_block:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    outline: none;
+}
+.rent_block:hover {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    outline: none;
+}
+.add_img{
+    width: 379px;
+height: 167px;
+
+margin: 5px;
+}
+.add_title {
+    width: 330px;
+    height: 40px;
+    
+    margin-top: 26px;
+    padding: 5px;
+    padding-left: 15px;
+}
+.add_subtitle {
+    width: 330px;
+    height: 80px;
+
+    margin-top: 5px;
+    padding: 5px;
+    padding-left: 15px;
+}
+.add_readmore {
+    width: 330px;
+    height: 20px;
+
+    margin-top: 10px;
+    padding: 5px;
+    padding-top: 0;
+    padding-left: 15px;
+}
+
+.add_readmore p {
+    color: #4A99C6;
+font-family: "Kumbh Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.add_btn {
+    width: 363px;
+    height: 43px;
+    margin-top: 10px;
+
+    padding-top: 0;
+
+
+}
+.add_btn button{
+    width: 332px;
+    height: 43px;
+    border-radius: 25px;
+    background: #0068A3;
+    border: 0;
+    color: #FFF;
+font-family: "Kumbh Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.add_wrap {
+    background-color: pink;
+    width: 99%;
+}
+.virsr {
+ 
+    height: 50px;
+    width: 450px;
+    margin-bottom: 30px;
+    
+}
+.darb_img_style {
+    margin-top: 96px;
+}
+.social_media {
+
+    width: 350px;
+    height: 50px;
+    margin-top: 132px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.soc_med_img {
+    margin: 0;
+}
+.uzn_pied_img_style {
+margin-left: 50px;
+margin-top: 50px;
+}
+.darbiba_btn {
+    width: 180px;
+    height: 50px;
+    margin-top: 132px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.slider{
+    background-color: red;
+    margin-bottom: 60px;
+    height:730px;
+}
+
+.centadis_btn {
+    width: 180px;
+    height: 40px;
+    border: 0;
+    background-color: rgba(160, 112, 223, 1);
+    border-radius: 20px;
+
+    color: #FFF;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+transition: background-color 0.3s ease; 
+}
+.centadis_btn:hover {
+    background-color: rgb(145, 89, 217);
+} 
+
+.work_time_block{
+
+    width: 500px;
+    height: 650px;
+    margin-top: 300px;
+    
+}
+.Location_time_block{
+      width: 70%;
+    height: 500px;
+    margin-top: 160px;
+    margin-left: 56px;
+
+}
+
+.loc_blok {
+    width: 350px;
+    height: 30px;
+    background-color: red;
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+
+}
+.work_days {
+
+    width: 20px;
+    height: 200px;
+}
+.work_days p {
+    color: #000;
+    font-family: Kumbh Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.work_times {
+
+    width: 180px;
+    height: 200px;
+    margin-left: 15px;
+
+}
+.work_times p {
+    color: #000;
+    font-family: Kumbh Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.closed{
+    color: #7429D4;
+    font-family: Kumbh Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+    .rew_block {
+
+        height: 520px;
+        width: 500px;
+        margin: 10px;
+        overflow: auto;
+
+    }
+  
+.rew_block_items {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 10px;
+    width: 90%;
+
+    margin: 10px;
+    background-color: #f9f9f9;
+}
+.rev_block_main {
+ width: 900px;
+ height: 500px;
+ margin-top: 50px;
+ margin-top: 5%;
+ display: flex;
+ flex-direction: row;
+}
+.rev_block_main  .virsr_Style {
+    text-align: center;
+}
+
+.rev_add_block {
+    background-color: white;
+    width: 300px;
+    height: 485px;
+    border-radius: 25px;
+
+    padding: 30px;
+
+}
+input {
+    margin-bottom: 15px;
+    width: 200px;
+    height: 28px;
+    border-radius: 5px;
+
+    background: #dfdfdf7d;
+    border: 0;
+    transition: 0.1s ease-in;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    outline: none;
+}
+textarea:focus {
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    outline: none;
+}
+.descr_style {
+    resize: none;
+    width: 290px;
+    height: 148px;
+    border: 0;
+    border-radius: 0px 4px 4px 0px;
+    background: #dfdfdf7d;
+    transition: 0.1s ease-in;
+ }
+.send {
+    float: right;
+    width: 91px;
+height: 30px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #4A99C6;
+border: 0;
+color: #FFF;
+font-family: Kumbh Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 10px;
+
+transition: 0.5s ease;
+}
+.send:hover {
+    background: #397ca3;
+}
+.rev_add_title {
+
+    height: 30px;
+}
+
+.rev_title {
+    color: #000;
+    font-family: Kumbh Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+footer {
+    background: #353535;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+.contact_block {
+
+    width: 620px;
+    height: 200px;
+}
+.social_media_block {
+
+    width: 620px;
+    height: 200px;
+}
+.footer_title {
+    height: 20px;
+    width: 120px;
+
+}
+.footer_title h3 {
+    color: white;
+
+}
+.footer_cntnt {
+
+    margin-top: 10px;
+    height: 150px;
+    width: 250px;
+}
+.footer_cntnt p {
+    margin-top: 0;
+    margin-bottom: 0;
+    float: left;
+    
+    color: #FFF;
+    font-family: Kumbh Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer_cntnt img {
+    float: left;
+    margin-left: 5px;   
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: black;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
