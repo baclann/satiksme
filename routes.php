@@ -141,8 +141,7 @@
                 }
             };
 
-            // Замените 'php/load_data2.php' на путь к вашему серверному скрипту,
-            // который обрабатывает запросы и возвращает данные из базы данных
+
             xhr.open("GET", "php/load_data2.php?option=" + parseInt(selectedOption) + "&option2=" + parseInt(selectedOption2), true);
             xhr.send();
         } else {
