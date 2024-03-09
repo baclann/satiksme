@@ -9,9 +9,10 @@ if ($connection->connect_error) {
 
 $selectedOption = $_GET["option"];
 $selectedOption2 = $_GET["option2"];
+$fill_select = $_GET["fillselect"];
 
-$sql = "SELECT id FROM `4` WHERE route_id = '$selectedOption'";
-$sql2 = "SELECT id FROM `4` WHERE route_id = '$selectedOption2'";
+$sql = "SELECT id FROM `".$fill_select."` WHERE route_id = '$selectedOption'";
+$sql2 = "SELECT id FROM `".$fill_select."` WHERE route_id = '$selectedOption2'";
 $result = $connection->query($sql);
 $result2 = $connection->query($sql2);
 
@@ -21,8 +22,8 @@ if ($result->num_rows > 0 && $result2->num_rows > 0) {
         $id1 = $row['id']; // Storing the value of id from the first query
         $id2 = $row2['id']; // Storing the value of id from the second query
         
-        $sqll = "SELECT * FROM `rout_name_add` WHERE id = '$id1'";
-        $sqll2 = "SELECT * FROM `rout_name_add` WHERE id = '$id2'";
+        $sqll = "SELECT * FROM `".$fill_select."` WHERE id = '$id1'";
+        $sqll2 = "SELECT * FROM `".$fill_select."` WHERE id = '$id2'";
         $resultt = $connection->query($sqll);
         $resultt2 = $connection->query($sqll2);
         
@@ -30,28 +31,24 @@ if ($result->num_rows > 0 && $result2->num_rows > 0) {
             die("Ошибка выполнения запроса: " . $connection->error);
         }
 
+
         if ($resultt->num_rows > 0 && $resultt2->num_rows > 0) {
             $roww = $resultt->fetch_assoc();
             $roww2 = $resultt2->fetch_assoc();
+            $route_name = "SELECT `route` FROM `route_list` WHERE id = ".$roww["route_id"];
+            $route_name2 = "SELECT `route` FROM `route_list` WHERE id = ".$roww2["route_id"];
+            $name_result1 = $connection->query($route_name);
+            $name_result2 = $connection->query($route_name2);
+            $name_roww1 = $name_result1->fetch_assoc();
+            $name_roww2 = $name_result2->fetch_assoc();
             ?>
-            <div class="route_item">
-                <div class="time_block">
-                    <span><?php echo $roww["arr_time"]?></span>
-                </div>
-                <div class="arrow_block">
-                    <img src="img/arrow.png" alt="Oooops...">
-                </div>
-                <div class="time_block">
-                    <span><?php echo $roww2["arr_time"]?></span>
-                </div>
-                <div class="img_block">
-                    <img src="img/route.png" alt="Oooops...">
-                </div>
-                <div class="route_name">
-                    <span><?php echo $roww["route"]?></span><br>
-                    <span>Autobusa NR:<?php echo $roww["bus_num"]?></span>
-                </div>
-            </div>
+              <details class="info">
+              <summary>
+                <p> <?php echo date("H:i", strtotime($roww["arr_time"])) . " - " . date("H:i", strtotime($roww2["arr_time"])) . " " . $name_roww1['route'] . " - " . $name_roww2['route'] ." Autobusa NR: " . $roww["bus_num"]?> </p>
+
+              </summary>
+              </details>
+   
             <?php
         } else {
             echo "Nav datu pēc izvēlētās pieturas...";

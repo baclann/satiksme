@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 
 $bus_nums = $_GET['bus_nums'];
 
-$sql = "SELECT route FROM route_list WHERE FIND_IN_SET('$bus_nums', bus_nums)";
+$sql = "SELECT id, route FROM route_list WHERE FIND_IN_SET('$bus_nums', bus_nums)";
 $result = $conn->query($sql);
 
 $rows = array();
