@@ -19,6 +19,33 @@ html, body {
     background-color: #d3d3d3; /* Цвет фона трека (неактивная часть) */
     border-radius: 6px; /* Закругленные углы ползунка */
 }
+/*ToolTips*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+ 
+}
+.tooltip h1 {
+  cursor: pointer;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: black;
+  color: #fff;
+
+  border-radius: 6px;
+  padding: 5px;
+  font-size: 12px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .navigation {
     padding: 10px;
     position: fixed;
@@ -192,6 +219,7 @@ input {
     display: flex;
     height: 50px;
     margin-bottom: 59px;
+   
 }
 
 button {
@@ -206,7 +234,7 @@ button {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
-    margin-left: 2%;
+  margin: 0;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -236,6 +264,7 @@ span {
     color: #ffffff;
     cursor: pointer;
     outline: #066c95;
+    margin-left: 10px;
     transition: all 0.3s ease;
 }
 .route_chose:hover{
@@ -349,12 +378,26 @@ select option {
     line-height: normal;
 }
 .routes_action_block {
-    width: 90%;
-    height: 50px;
-    background-color: pink;
+   
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
+}
+.title_wrap {
+  width: 100%;
+  display: flex;
+}
+.texts{
+ 
+  width: 90%;
+  padding: 10px;
+}
+.clocks {
+ 
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .clock {
 
@@ -504,17 +547,30 @@ footer {
   
 }
 
-
-
+.n{
+  background-color: #AED6F1;
+  height: 20px;
+  width: 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+.route_content{
+  background-color: red;
+  display: flex;
+}
 .card {
+  display: block;
   background: white;
   padding: 38px 36px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 40px;
   border-radius: 4px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, .1);
 
-  width: 90%;
+
   
   h1 {
     font-family: var(--font-ibm-plex-sans);

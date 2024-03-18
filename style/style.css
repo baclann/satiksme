@@ -55,23 +55,23 @@ a {
     text-decoration: none;
     margin-left: 24px;
     color: #000;
-font-family: Kumbh Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-transition: opacity 0.3s ease;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: opacity 0.3s ease;
 }
 a:hover {
     opacity: 0.7;
 }
 label {
     color: #000;
-font-family: Kumbh Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 .add_rem {
     color: #0068A3;
@@ -114,30 +114,30 @@ line-height: normal;
 .main_txt {
     color: black;
     font-family: Kumbh Sans;
-font-size: 64px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-margin-bottom: 0;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 0;
 }
 .virsr_Style {
     color: #000;
-font-family: Kumbh Sans;
-font-size: 36px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
+    font-family: Kumbh Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
 
 }
 .sub_main_txt {
     color: #000;
-font-family: Kumbh Sans;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-top: 0;
-margin-bottom: 53px;
+    font-family: Kumbh Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 53px;
 }
 .rows {
 
@@ -180,12 +180,12 @@ margin-bottom: 53px;
     margin-top: 130px;
     border: none;
     color: #FFF;
-font-family: Kumbh Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-transition: background-color 0.3s ease; 
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: background-color 0.3s ease; 
 }
 .add_saz_btn {
     width: 180px;
@@ -197,12 +197,12 @@ transition: background-color 0.3s ease;
     margin-left: 20px;
     border: none;
     color: #FFF;
-font-family: Kumbh Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-transition: background-color 0.3s ease; 
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: background-color 0.3s ease; 
 }
 .add_rem_btn:hover {
     background-color: #005180;;
@@ -260,9 +260,9 @@ transition: background-color 0.3s ease;
 }
 .add_img{
     width: 379px;
-height: 167px;
+    height: 167px;
 
-margin: 5px;
+    margin: 5px;
 }
 .add_title {
     width: 330px;
@@ -292,11 +292,11 @@ margin: 5px;
 
 .add_readmore p {
     color: #4A99C6;
-font-family: "Kumbh Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 .add_btn {
     width: 363px;
@@ -314,11 +314,11 @@ line-height: normal;
     background: #0068A3;
     border: 0;
     color: #FFF;
-font-family: "Kumbh Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    font-family: "Kumbh Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .add_wrap {
@@ -347,8 +347,8 @@ line-height: normal;
     margin: 0;
 }
 .uzn_pied_img_style {
-margin-left: 50px;
-margin-top: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 .darbiba_btn {
     width: 180px;
@@ -372,12 +372,12 @@ margin-top: 50px;
     border-radius: 20px;
 
     color: #FFF;
-font-family: Kumbh Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-transition: background-color 0.3s ease; 
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: background-color 0.3s ease; 
 }
 .centadis_btn:hover {
     background-color: rgb(145, 89, 217);
@@ -467,12 +467,12 @@ transition: background-color 0.3s ease;
     background-color: #f9f9f9;
 }
 .rev_block_main {
- width: 900px;
- height: 500px;
- margin-top: 50px;
- margin-top: 5%;
- display: flex;
- flex-direction: row;
+    width: 900px;
+    height: 500px;
+    margin-top: 50px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
 }
 .rev_block_main  .virsr_Style {
     text-align: center;
@@ -518,20 +518,20 @@ textarea:focus {
 .send {
     float: right;
     width: 91px;
-height: 30px;
-flex-shrink: 0;
-border-radius: 5px;
-background: #4A99C6;
-border: 0;
-color: #FFF;
-font-family: Kumbh Sans;
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-margin-bottom: 10px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #4A99C6;
+    border: 0;
+    color: #FFF;
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
 
-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 .send:hover {
     background: #397ca3;

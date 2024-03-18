@@ -2,7 +2,7 @@
 $alert = '';
 if (empty($_COOKIE['auth'])) {
    
-    header("location:http://localhost/satiksme_new/auth_page.php"); 
+    header("location:http://satiksme.webexteam.eu/auth_page.php"); 
     $alert = 'Autorizācijas laiks beidzies.. Lūdzu autorizējaties atkārtoti.';
     die();
 }

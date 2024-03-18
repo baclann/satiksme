@@ -14,7 +14,7 @@ $comment = $_POST['comment'];
 $sql = "INSERT INTO reviews (name, comment) VALUES ('$name', '$comment')";
 
 if ($connection->query($sql) === TRUE) {
-   header("location:http://localhost/satiksme_new/main.php");
+   header("location:http://satiksme.webexteam.eu/main.php");
    
 } else {
     echo "Error: " . $sql . "<br>" . $connection->error;

@@ -19,7 +19,7 @@ $sql = "INSERT INTO ads_req (name, phone, type, date_start, date_end, descriptio
 
 if ($connection->query($sql) === TRUE) {
 
-   header("location:http://localhost/satiksme_new/requests.php");
+   header("location:http://satiksme.webexteam.eu/requests.php");
    
 } else {
     echo "Error: " . $sql . "<br>" . $connection->error;

@@ -18,7 +18,7 @@ $sql = "INSERT INTO complaints (name, phone, reason, situation, add_date, file) 
 
 if ($connection->query($sql) === TRUE) {
 
-   header("location:http://localhost/satiksme_new/complaints.php");
+   header("location:http://satiksme.webexteam.eu/complaints.php");
    
 } else {
     echo "Error: " . $sql . "<br>" . $connection->error;

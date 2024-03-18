@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/timer.js"> </script>
     <script src="js/select_fill.js"></script>
- 
     <script src="js/clear_options_in_Select.js"></script>
     <script src="js/routes_loader.js"></script>
-     <script src="js/routes_search_by_selects.js"></script>
+    <script src="js/routes_search_by_selects.js"></script>
+
+
     <title>Rēzeknes Satiksme</title>
 </head>
 <body>
@@ -58,8 +60,8 @@
 
         <div class="title_block">
             <div class="routes_action_block">
-
-                 <div class="clock" id="clock"></div>
+            <h4 style="margin-left: 15px; margin-bottom:0px">Maršruta meklēšana</h4>
+                
 
                       <div class="routes_search">
 
@@ -99,32 +101,29 @@
              </select>
    <!-- Selekti -->
 
-             <div class="wrapper_select">
-                <div class="select-btn">
-                <span class="input_txt">Izvelaties pieturu (no)</span>
-                <i class="uil uil-angle-down" style="color: white;"></i>
-              </div>
-                <div class="content">
-                    <div class="search">
-                    <i class="uil uil-search"></i>
-                    <input spellcheck="false" type="text" placeholder="Meklēt" class="select_input">
-                    </div>
-                    <ul class="options"></ul>
-                </div>
-                </div>
-                <script src="js/custom_Select.js"></script>
-            </div>
+                      </div>
+        
 
                   <div class="card" id = "result2"> 
-                  <h1>Reāllaika Maršruti</h1>
-                    <p>Klikškiniet pa nepieciešamo maršrutu lai uzzinātu vairāk</p>
+                    <div class="title_wrap">
+                        <div class="texts">
+                        <div class="tooltip"><h1>Reāllaika Maršruti <i style="font-size:15px; color: gray" class="fa-solid fa-info"></i> </h1>  <span class="tooltiptext">Attēloti visi aktuālā laika tuvākie maršruti, pārējos varat apskatīt sadaļā "Pagājušie maršruti"</span></div>
+                            <p>Klikškiniet pa nepieciešamo maršrutu lai uzzinātu vairāk</p>
+                        </div>
+                        <div class="clocks">
+                            <input type="hidden" value="" id="hidden_time">
+                            <div class="clock" id="clock"></div>
+                        </div>
+                    </div>
+
+
                   </div>
                   
   
             </div>
         </div>
-       
 
+  
  </body>
 <!--<footer>
 <div class="wrapper"> 

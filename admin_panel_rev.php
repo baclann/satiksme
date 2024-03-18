@@ -2,7 +2,7 @@
 
 if (empty($_COOKIE['auth'])) {
    
-    header("location:http://localhost/satiksme_new/auth_page.php"); 
+    header("location:http://satiksme.webexteam.eu/auth_page.php"); 
     die();
 }
 
@@ -35,7 +35,7 @@ if (empty($_COOKIE['auth'])) {
         </div>
         <div class="items">
         <ul class = "menu">
-        <a class = "nav_actions" href="#">Iziet</a>
+        <a class = "nav_actions" href="php/logout.php">Iziet</a>
         <a class="nav_actions" href="#"><img src="img/user.png" alt=""></a>
         <a class="nav_actions" href="main.php"><img src="img/home.png" alt=""></a>
         </ul>

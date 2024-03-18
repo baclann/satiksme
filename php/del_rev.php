@@ -10,7 +10,7 @@ if(isset($_POST["id"]))
     $sql = "DELETE FROM reviews WHERE id = '$userid'";
     if(mysqli_query($connection, $sql)){
          
-        header("Location: ../admin_panel_rev.php");
+        header("Location: satiksme.webexteam.eu/admin_panel_rev.php");
     } else{
         echo "Ошибка: " . mysqli_error($connection);
     }

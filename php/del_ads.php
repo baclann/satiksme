@@ -10,7 +10,7 @@ if(isset($_POST["id"]))
     $sql = "DELETE FROM ads_req WHERE id = '$userid'";
     if(mysqli_query($connection, $sql)){
          
-        header("Location: ../admin_panel_ad_request.php");
+        header("Location: satiksme.webexteam.eu/admin_panel_ad_request.php");
     } else{
         echo "Kļūda: " . mysqli_error($connection);
     }

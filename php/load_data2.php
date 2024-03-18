@@ -42,13 +42,40 @@ if ($result->num_rows > 0 && $result2->num_rows > 0) {
             $name_roww1 = $name_result1->fetch_assoc();
             $name_roww2 = $name_result2->fetch_assoc();
             ?>
-              <details class="info">
-              <summary>
-                <p> <?php echo date("H:i", strtotime($roww["arr_time"])) . " - " . date("H:i", strtotime($roww2["arr_time"])) . " " . $name_roww1['route'] . " - " . $name_roww2['route'] ." Autobusa NR: " . $roww["bus_num"]?> </p>
 
+
+
+
+                        <button style="float: right; margin-top:40px; margin-left:10px;"><i class="fa-solid fa-repeat"></i></button>
+              <details class="info">
+          
+              <summary>
+
+                    
+            <p><?php
+
+                            if(strtotime($roww["arr_time"]) < strtotime($roww2["arr_time"])){
+                                
+
+            echo date("H:i", strtotime($roww["arr_time"])) . "  <i style='font-size:10px; padding-left:10px; padding-right:10px; padding-top:3px' class='fa-solid fa-arrow-right'></i>  " . date("H:i", strtotime($roww2["arr_time"]));
+                                          }
+                            else {
+                                echo date("H:i", strtotime($roww2["arr_time"])) . "  <i style='font-size:10px; padding-left:10px; padding-right:10px; padding-top:3px' class='fa-solid fa-arrow-right'></i>  " . date("H:i", strtotime($roww["arr_time"]));
+                            }
+                       
+                            ?>   </p> <p> <?php 
+                                if(strtotime($roww["arr_time"]) < strtotime($roww2["arr_time"])){
+                                    echo $name_roww1['route'] . " - " . $name_roww2['route'];  
+                                }   else{
+                                    echo $name_roww2['route'] . " - " . $name_roww1['route'];   
+                                }
+                                ?> </p>
+           
+            <p>Autobusa NR:  <?php echo $roww["bus_num"]?></p>
               </summary>
+            
               </details>
-   
+       
             <?php
         } else {
             echo "Nav datu pēc izvēlētās pieturas...";

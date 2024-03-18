@@ -18,7 +18,7 @@ $sql = "INSERT INTO rents (name, phone, type, datums, laiks_no, laiks_lidz, desc
 
 if ($connection->query($sql) === TRUE) {
 
-   header("location:http://localhost/satiksme_new/rent.php");
+   header("location:http://satiksme.webexteam.eu/rent.php");
    
 } else {
     echo "Error: " . $sql . "<br>" . $connection->error;
