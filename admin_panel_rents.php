@@ -28,7 +28,7 @@ if (empty($_COOKIE['auth'])) {
             <a  href="admin_panel_rents.php">Nomas pieteikumi</a>
             <a  href="admin_panel_complaints.php">Sūdzības</a>
             <a  href="admin_panel_rev.php">Atsauksmes</a>
-            <a  href="#">Konti</a>
+            <a  href="admin_panel_users.php">Konti</a>
             </ul>
 
         </div>
@@ -49,7 +49,7 @@ if (empty($_COOKIE['auth'])) {
                 <h2>Nomas pieteikumi</h2>
             </div>
             <div class="actions ">
-                <input class="inpt" type="text" placeholder="Meklēt...">
+            
             </div>
         </div>
 

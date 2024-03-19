@@ -51,8 +51,8 @@
 
         <form>
         <div class="auth_ctnt">
-            <input type="text" name="login" id="username" placeholder="Lietotājvārds" ><br>
-            <input type="password" name="password" id="password" placeholder = "Parole" ><br>
+            <input type="text" name="login" id="username" placeholder="Lietotājvārds" value="admin" ><br>
+            <input type="password" name="password" id="password" placeholder = "Parole" value="admin" ><br>
             <button id = "btn" >Autorizēties</button>
             
         </div>

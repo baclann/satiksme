@@ -16,6 +16,8 @@ if (empty($_COOKIE['auth'])) {
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href='img/admin.png' type="image/png">
     <title>Administrēšanas vietne</title>
 </head>
 <body>
@@ -28,7 +30,7 @@ if (empty($_COOKIE['auth'])) {
             <a  href="admin_panel_rents.php">Nomas pieteikumi</a>
             <a  href="admin_panel_complaints.php">Sūdzības</a>
             <a  href="admin_panel_rev.php">Atsauksmes</a>
-            <a  href="#">Konti</a>
+            <a  href="admin_panel_users.php">Konti</a>
 
             </ul>
 
@@ -50,7 +52,7 @@ if (empty($_COOKIE['auth'])) {
                 <h2>Atsauksmju saraksts</h2>
             </div>
             <div class="actions ">
-                <input class="inpt" type="text" placeholder="Meklēt...">
+       
             </div>
         </div>
 

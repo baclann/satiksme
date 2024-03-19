@@ -38,6 +38,7 @@
                 <a  href="main.php#pak">Pakalpojumi</a>
                 <a  href="complaints.php">Rakstīt sūdzību</a>
                 <a  href="#">Par mums</a>
+                <a href="admin_panel_ad_request.php" style="color: #FF204E; font-weight: bold;">Admin Panel</a>
           </ul> 
        </div>
 

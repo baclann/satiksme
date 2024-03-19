@@ -31,6 +31,7 @@
                 <a  href="main.php#pak">Pakalpojumi</a>
                 <a  href="#">Rakstīt sūdzību</a>
                 <a  href="#">Par mums</a>
+                <a href="admin_panel_ad_request.php" style="color: #FF204E; font-weight: bold;">Admin Panel</a>
           </ul> 
        </div>
 
@@ -129,8 +130,7 @@
             </div>
             <div class="footer_cntnt">
                 <a href="#"> <img src="img/footer_Facebook.png" alt="Oooops...."></a>
-                <a href="#"> <img src="img/footer_TikTOk.png" alt="Oooops...."></a>
-                <a href="#"> <img src="img/footer_WhatsApp.png" alt="Oooops...."></a>
+
                 </div>
     </div>
 </div>
